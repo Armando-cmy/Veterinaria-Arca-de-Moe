@@ -1,0 +1,71 @@
+﻿@page
+@model Veterinaria_Arca_de_Moe.Pages.VeterinariosModel
+
+@{
+    ViewData["Title"] = "Veterinarios";
+}
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="titulo-seccion titulo-veterinarios">Veterinarios</h1>
+
+        <a asp-page="/Veterinarios" class="btn"
+           style="background:#9b59b6;color:#fff;border-color:#9b59b6;">
+            Nuevo Veterinario
+        </a>
+    </div>
+
+    <table class="table table-bordered table-striped tabla-veterinarios">
+
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Especialidad</th>
+                <th>Teléfono</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Carlos</td>
+                <td>López</td>
+                <td>Medicina general</td>
+                <td>73333333</td>
+                <td>
+                    <span class="badge bg-success">Activo</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Ana</td>
+                <td>Martínez</td>
+                <td>Cirugía veterinaria</td>
+                <td>74444444</td>
+                <td>
+                    <span class="badge bg-success">Activo</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pedro</td>
+                <td>Hernández</td>
+                <td>Dermatología</td>
+                <td>75555555</td>
+                <td>
+                    <span class="badge bg-danger">Inactivo</span>
+                </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <a asp-page="/Index" class="btn btn-secondary">
+        Volver al inicio
+    </a>
+
+</div>

@@ -1,0 +1,80 @@
+﻿@page
+@model Veterinaria_Arca_de_Moe.Pages.CitasModel
+
+@{
+    ViewData["Title"] = "Citas";
+}
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="titulo-seccion titulo-citas">Citas</h1>
+
+        <a asp-page="/Citas" class="btn btn-warning">
+            Nueva Cita
+        </a>
+    </div>
+
+    <table class="table table-bordered table-striped tabla-citas">
+
+        <thead>
+            <tr>
+                <th>Mascota</th>
+                <th>Veterinario</th>
+                <th>Fecha y hora</th>
+                <th>Motivo</th>
+                <th>Estado de cita</th>
+                <th>Diagnóstico</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Max</td>
+                <td>Dr. Carlos López</td>
+                <td>30/08/2026 10:00</td>
+                <td>Vacunación</td>
+                <td>
+                    <span class="badge bg-warning text-dark">
+                        Pendiente
+                    </span>
+                </td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td>Luna</td>
+                <td>Dra. Ana Martínez</td>
+                <td>30/08/2026 11:30</td>
+                <td>Revisión general</td>
+                <td>
+                    <span class="badge bg-success">
+                        Completada
+                    </span>
+                </td>
+                <td>Buen estado de salud</td>
+            </tr>
+
+            <tr>
+                <td>Rocky</td>
+                <td>Dr. Carlos López</td>
+                <td>31/08/2026 09:00</td>
+                <td>Problemas de piel</td>
+                <td>
+                    <span class="badge bg-danger">
+                        Cancelada
+                    </span>
+                </td>
+                <td>-</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <a asp-page="/Index" class="btn btn-secondary">
+        Volver al inicio
+    </a>
+
+</div>

@@ -1,0 +1,37 @@
+﻿@page
+
+@{
+    ViewData["Title"] = "Nuevo Veterinario";
+}
+
+<h1>Registrar Veterinario</h1>
+
+<form method="post">
+
+    <label>Nombre:</label>
+    <input type="text" name="Nombre" />
+
+    <label>Apellidos:</label>
+    <input type="text" name="Apellidos" />
+
+    <label>Especialidad:</label>
+    <input type="text" name="Especialidad" />
+
+    <label>Teléfono:</label>
+    <input type="text" name="Telefono" />
+
+    <label>Estado:</label>
+    <select name="Estado">
+        <option value="Activo">Activo</option>
+        <option value="Inactivo">Inactivo</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">Guardar</button>
+
+</form>
+
+<br>
+
+<a href="/Veterinarios">Volver</a>

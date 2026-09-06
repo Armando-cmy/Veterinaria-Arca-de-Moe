@@ -1,0 +1,70 @@
+﻿@page
+@model Veterinaria_Arca_de_Moe.Pages.PropietariosModel
+
+@{
+    ViewData["Title"] = "Propietarios";
+}
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="titulo-seccion titulo-propietarios">Propietarios</h1>
+
+        <a asp-page="/Propietarios" class="btn btn-success">
+            Nuevo Propietario
+        </a>
+    </div>
+
+    <table class="table table-bordered table-striped tabla-propietarios">
+
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Teléfono</th>
+                <th>Email</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Juan</td>
+                <td>Pérez</td>
+                <td>70000000</td>
+                <td>juan@gmail.com</td>
+                <td>
+                    <span class="badge bg-success">Activo</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>María</td>
+                <td>Gómez</td>
+                <td>71111111</td>
+                <td>maria@gmail.com</td>
+                <td>
+                    <span class="badge bg-success">Activo</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Carlos</td>
+                <td>Rodríguez</td>
+                <td>72222222</td>
+                <td>carlos@gmail.com</td>
+                <td>
+                    <span class="badge bg-danger">Inactivo</span>
+                </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <a asp-page="/Index" class="btn btn-secondary">
+        Volver al inicio
+    </a>
+
+</div>

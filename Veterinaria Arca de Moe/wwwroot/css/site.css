@@ -1,0 +1,98 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+/* ── Navbar ── */
+.navbar {
+    background: linear-gradient(135deg, #1a6b3c 0%, #2ecc71 100%) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: .5px;
+}
+
+.navbar .nav-link {
+    color: rgba(255,255,255,.88) !important;
+    font-weight: 500;
+    transition: color .2s;
+}
+
+.navbar .nav-link:hover {
+    color: #fff !important;
+    text-decoration: underline;
+}
+
+/* ── Footer ── */
+footer.footer {
+    background: #1a6b3c;
+    color: rgba(255,255,255,.75) !important;
+}
+
+footer.footer a {
+    color: #a8f0c6;
+}
+
+/* ── Index: tarjetas ── */
+.card-propietarios { border-left: 5px solid #2ecc71; }
+.card-mascotas     { border-left: 5px solid #3498db; }
+.card-veterinarios { border-left: 5px solid #9b59b6; }
+.card-citas        { border-left: 5px solid #e67e22; }
+
+.card-propietarios .card-title { color: #1a6b3c; }
+.card-mascotas     .card-title { color: #1a5276; }
+.card-veterinarios .card-title { color: #6c3483; }
+.card-citas        .card-title { color: #a04000; }
+
+/* ── Tablas ── */
+.tabla-propietarios thead { background: #1a6b3c !important; color: #fff; }
+.tabla-mascotas     thead { background: #1a5276 !important; color: #fff; }
+.tabla-veterinarios thead { background: #6c3483 !important; color: #fff; }
+.tabla-citas        thead { background: #a04000 !important; color: #fff; }
+
+.tabla-propietarios tbody tr:hover { background-color: #eafaf1; }
+.tabla-mascotas     tbody tr:hover { background-color: #eaf4fb; }
+.tabla-veterinarios tbody tr:hover { background-color: #f5eef8; }
+.tabla-citas        tbody tr:hover { background-color: #fdf2e9; }
+
+/* ── Título de sección ── */
+.titulo-seccion {
+    border-left: 5px solid;
+    padding-left: .6rem;
+    margin-bottom: 1.2rem;
+}
+.titulo-propietarios { border-color: #2ecc71; color: #1a6b3c; }
+.titulo-mascotas     { border-color: #3498db; color: #1a5276; }
+.titulo-veterinarios { border-color: #9b59b6; color: #6c3483; }
+.titulo-citas        { border-color: #e67e22; color: #a04000; }

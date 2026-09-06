@@ -1,0 +1,74 @@
+﻿@page
+@model Veterinaria_Arca_de_Moe.Pages.MascotasModel
+
+@{
+    ViewData["Title"] = "Mascotas";
+}
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="titulo-seccion titulo-mascotas">Mascotas</h1>
+
+        <a asp-page="/Mascotas" class="btn btn-primary">
+            Nueva Mascota
+        </a>
+    </div>
+
+    <table class="table table-bordered table-striped tabla-mascotas">
+
+        <thead>
+            <tr>
+                <th>Propietario</th>
+                <th>Nombre</th>
+                <th>Especie</th>
+                <th>Raza</th>
+                <th>Fecha de nacimiento</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Juan Pérez</td>
+                <td>Max</td>
+                <td>Perro</td>
+                <td>Labrador</td>
+                <td>10/05/2022</td>
+                <td>
+                    <span class="badge bg-success">Activo</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>María Gómez</td>
+                <td>Luna</td>
+                <td>Gato</td>
+                <td>Siamés</td>
+                <td>15/08/2021</td>
+                <td>
+                    <span class="badge bg-success">Activo</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Carlos Rodríguez</td>
+                <td>Rocky</td>
+                <td>Perro</td>
+                <td>Pastor Alemán</td>
+                <td>20/01/2020</td>
+                <td>
+                    <span class="badge bg-danger">Inactivo</span>
+                </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <a asp-page="/Index" class="btn btn-secondary">
+        Volver al inicio
+    </a>
+
+</div>

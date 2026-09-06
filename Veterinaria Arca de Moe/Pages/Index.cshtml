@@ -1,0 +1,78 @@
+﻿@page
+@model IndexModel
+
+@{
+    ViewData["Title"] = "Veterinaria Arca de Moe";
+}
+
+<div class="container mt-5">
+
+    <div class="text-center mb-5">
+        <h1>Veterinaria Arca de Moe</h1>
+        <p class="lead">
+            Sistema de gestión de la veterinaria
+        </p>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-6 mb-4">
+            <div class="card card-propietarios">
+                <div class="card-body">
+                    <h3 class="card-title">Propietarios</h3>
+                    <p class="card-text">
+                        Gestión de los propietarios de las mascotas.
+                    </p>
+                    <a asp-page="/Propietarios" class="btn btn-success">
+                        Ver propietarios
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card card-mascotas">
+                <div class="card-body">
+                    <h3 class="card-title">Mascotas</h3>
+                    <p class="card-text">
+                        Registro de las mascotas de la veterinaria.
+                    </p>
+                    <a asp-page="/Mascotas" class="btn btn-primary">
+                        Ver mascotas
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card card-veterinarios">
+                <div class="card-body">
+                    <h3 class="card-title">Veterinarios</h3>
+                    <p class="card-text">
+                        Información de los veterinarios.
+                    </p>
+                    <a asp-page="/Veterinarios" class="btn btn-purple"
+                       style="background:#9b59b6;color:#fff;border-color:#9b59b6;">
+                        Ver veterinarios
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card card-citas">
+                <div class="card-body">
+                    <h3 class="card-title">Citas</h3>
+                    <p class="card-text">
+                        Gestión de las citas veterinarias.
+                    </p>
+                    <a asp-page="/Citas" class="btn btn-warning">
+                        Ver citas
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
