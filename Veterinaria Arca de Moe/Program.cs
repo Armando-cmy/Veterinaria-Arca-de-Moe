@@ -6,15 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 
 builder.Services.AddDbContext<VeterinariaContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("VeterinariaContext")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("VeterinariaContext")));
 
 var app = builder.Build();
-
-using (var scope = app.Services.CreateScope())
-{
-    var db = scope.ServiceProvider.GetRequiredService<VeterinariaContext>();
-    db.Database.EnsureCreated();
-}
 
 if (!app.Environment.IsDevelopment())
 {
